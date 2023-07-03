@@ -1,0 +1,73 @@
+.timeline-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-section {
+  display: flex;
+  justify-content: center;
+}
+
+.pseudo-icon {
+  background: linear-gradient(45deg, rgb(243, 253, 156), rgb(172, 243, 144));
+  border-radius: 50%;
+  margin: 17px 17px;
+  padding: 13px 21px;
+  text-align: center;
+  color: black;
+}
+
+.timeline-content {
+  display: flex;
+}
+
+.timeline-left {
+  border-left: 1px black dotted;
+}
+
+.timeline-section:nth-child(even) {
+  .timeline-right {
+    border-left: 1px black dotted;
+    order: 2;
+  }
+
+  .timeline-left {
+    text-align: right;
+    border: 0px;
+    order: 1;
+  }
+}
+
+.content-element img {
+  width: 450px;
+  height: 300px;
+  margin: 50px 25px;
+}
+
+.content-element-text {
+  width: 450px;
+  height: 300px;
+  margin: 50px 25px;
+  padding: 90px 0px;
+}
+
+.timeline-section:nth-child(5) {
+  .timeline-content{
+    display: none;
+  }
+
+}
+
+.FinalStep{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FinalStep h1{
+  text-align: center;
+  background-color: rgb(255, 255, 144);
+  width: 10%;
+}
+

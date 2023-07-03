@@ -1,0 +1,29 @@
+.client-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.description{
+    font-family: 'Montserrat', 'sans-serif';
+    padding: 10px 10px;
+    text-align: center;
+    
+}
+
+.description h4{
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(173, 173, 173);
+    
+}
+
+.clients{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boxes img{
+    margin: 5px 5px;
+    width: 150px;
+    height: 40px;
+}
