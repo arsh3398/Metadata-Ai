@@ -1,4 +1,7 @@
-.FeatureDisplay {
+*{
+    font-family: 'Montserrat', sans-serif;
+  }
+.Feature-display {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,14 +17,28 @@
 
 }
 
-.FeatureView img {
+.Feature-view img {
     width: 500px;
     height: 400px;
+    animation: scroll 0.8s linear infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(-30px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(50px);
+        opacity: 0.3;
+    }
+    
 }
 
 
-
-.FeatureInfo {
+.Feature-info {
     padding: 0px 20px;
     margin: 0px 20px;
 
@@ -42,10 +59,11 @@
 }
 
 .Feature:nth-child(even){
-    .FeatureView{
+    .Feature-view{
         order:2;
     }
-    .FeatureInfo{
+    .Feature-info{
         order:1;
     }
+    
 }

@@ -1,0 +1,22 @@
+.social-post{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.iphone-x {
+    border: 15px rgb(218, 217, 217) solid;
+    border-radius: 50px;
+    margin: 0px 50px;
+  }
+
+  .iphone-x img{
+    z-index: -1;
+    border-radius: 50px;
+  }
+
+  .iphone-x:nth-child(even){
+    transform: translateY(100px);
+  }
+
+  
