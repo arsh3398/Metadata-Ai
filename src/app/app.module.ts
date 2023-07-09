@@ -16,9 +16,10 @@ import { WorldmapComponent } from './components/worldmap/worldmap.component';
 import { IntegrationComponent } from './components/integration/integration.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { CustomerStoryComponent } from './components/customer-story/customer-story.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent],
+  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
