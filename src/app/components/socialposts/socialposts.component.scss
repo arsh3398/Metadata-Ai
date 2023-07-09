@@ -1,22 +1,29 @@
 .social-post{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
+  margin: 80px 50px;
+  font-family: "Montserrat", sans-serif;
+  h1{
+    text-align: center;
+    text-decoration: underline;
+  }
+    .section{
+      display: flex;
+      justify-content: center;
+      margin: 60px 60px;
+      .content{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+        img{
+          width: 400px;
+          border: 7px grey solid;
+          border-radius: 10px;
+        }
+      }
+    }
 }
-.iphone-x {
-    border: 15px rgb(218, 217, 217) solid;
-    border-radius: 50px;
-    margin: 0px 50px;
-  }
 
-  .iphone-x img{
-    z-index: -1;
-    border-radius: 50px;
-  }
 
-  .iphone-x:nth-child(even){
-    transform: translateY(100px);
-  }
 
   
