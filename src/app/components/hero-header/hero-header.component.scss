@@ -54,9 +54,12 @@
 }
 
 @media screen and (max-width: 990px) {
+    .hero-header{
+        margin-top: 125px;
+    }
     .left-content{
         h1{
-            font-size: larger;
+            font-size: x-large;
             font-weight: bolder;
         }
         
@@ -66,14 +69,14 @@
 @media screen and (max-width: 820px) {
     .left-content{
         h1{
-            font-size: medium;
+            font-size: larger;
             font-weight: bolder;
         }
         p{
             font-size: small;
         }
         .Demo-button{
-            padding: 5px 5px; 
+            padding: 7px 7px; 
             font-size: smaller;
         }
     }
