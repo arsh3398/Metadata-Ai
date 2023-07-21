@@ -145,7 +145,8 @@
 
 @media screen and (max-width: 800px) {
     .navbar-4{
-        position: relative;
+        position: absolute;
+        top: 0;
     }
     .menu-button {
         display: block;
@@ -176,7 +177,8 @@
 @media screen and (max-width: 420px) {
 
     .navbar-4{
-        position: relative;
+        position: absolute;
+        top: 0;
     }
     .Demo-button {
         font-size: small;

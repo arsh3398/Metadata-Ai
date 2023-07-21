@@ -52,3 +52,30 @@
 
     }
 }
+
+@media screen and (max-width: 990px) {
+    .left-content{
+        h1{
+            font-size: larger;
+            font-weight: bolder;
+        }
+        
+    }
+    
+}
+@media screen and (max-width: 820px) {
+    .left-content{
+        h1{
+            font-size: medium;
+            font-weight: bolder;
+        }
+        p{
+            font-size: small;
+        }
+        .Demo-button{
+            padding: 5px 5px; 
+            font-size: smaller;
+        }
+    }
+    
+}

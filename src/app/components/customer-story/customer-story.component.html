@@ -1,17 +1,8 @@
 <div class="customer-story">
   <ul class="nav nav-tabs">
-    <li
-      class="nav-item"
-      *ngFor="let tab of [1, 2, 3, 4]; let i = index"
-      (click)="makeActive(i)"
-    >
-      <a
-        class="nav-link"
-        [ngClass]="activeTab == i ? 'active' : ''"
-        aria-current="page"
-        [ngStyle]="activeTab == i ? stylesTab : null"
-        ><img src="assets/paypal-colour.png" alt=""
-      /></a>
+    <li class="nav-item" *ngFor="let tab of [1, 2, 3, 4]; let i = index" (click)="makeActive(i)">
+      <a class="nav-link" [ngClass]="activeTab == i ? 'active' : ''" aria-current="page"
+        [ngStyle]="activeTab == i ? stylesTab : null"><img src="assets/paypal-colour.png" alt="" /></a>
     </li>
   </ul>
   <div class="banner" *ngFor="let tablePanel of tablePanels; let j = index">

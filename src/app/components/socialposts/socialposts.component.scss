@@ -6,17 +6,12 @@
     text-decoration: underline;
   }
     .section{
-      display: flex;
-      justify-content: center;
       margin: 60px 60px;
       .content{
-        display: flex;
-        gap: 30px;
-        align-items: center;
-        justify-content: center;
         color: gray;
+        text-align: center;
         img{
-          width: 400px;
+          width: 52%;
           border: 7px grey solid;
           border-radius: 10px;
         }
@@ -24,6 +19,13 @@
     }
 }
 
-
-
-  
+@media screen and (max-width: 696px) {
+  .content{
+    .text{
+      h2{
+        font-size: medium;
+        font-weight: 800;
+      }
+    }
+  }
+}
