@@ -1,0 +1,31 @@
+<div class="navbar">
+    <div class="content container">
+            <div class="logo"><img src="assets/logo.png" alt=""></div>
+            <div class="pages">
+                <ul>
+                    <li><a routerLink="">Home</a></li>
+                    <li><a routerLink="about">About Us</a></li>
+                    <li><a routerLink="contact">Contact Us</a></li>
+                    <li><a routerLink="career">Career</a></li>
+                </ul>
+        </div>
+        <button class="menu" (click)="displayChange()">Hamburger</button>
+        
+    </div>
+</div>
+<div class="mobile-nav" *ngIf="isActive">
+    <div class="mobile-content container">
+        <div class="pages">
+            <ul>
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="about">About Us</a></li>
+                <li><a routerLink="contact">Contact Us</a></li>
+                <li><a routerLink="career">Career</a></li>
+            </ul>
+    </div>
+</div></div>
+
+
+
+
+

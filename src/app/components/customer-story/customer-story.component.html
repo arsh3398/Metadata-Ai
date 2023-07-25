@@ -2,16 +2,16 @@
   <ul class="nav nav-tabs">
     <li class="nav-item" *ngFor="let tab of [1, 2, 3, 4]; let i = index" (click)="makeActive(i)">
       <a class="nav-link" [ngClass]="activeTab == i ? 'active' : ''" aria-current="page"
-        [ngStyle]="activeTab == i ? stylesTab : null"><img src="assets/paypal-colour.png" alt="" /></a>
+        [ngStyle]="activeTab == i ? stylesTab : null">Overview</a>
     </li>
   </ul>
   <div class="banner" *ngFor="let tablePanel of tablePanels; let j = index">
-    <div class="panel" [ngStyle]="activeTab == j ? stylesPanel : null">
-      <div class="content-container">
-        <div class="image-container">
+    <div class="panel container" [ngStyle]="activeTab == j ? stylesPanel : null">
+      <div class="content-container row">
+        <div class="image-container col-6">
           <img src="{{ tablePanel }}" alt="" />
         </div>
-        <div class="text-content col-3">
+        <div class="text-content col-6">
           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique

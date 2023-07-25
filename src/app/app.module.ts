@@ -17,10 +17,19 @@ import { IntegrationComponent } from './components/integration/integration.compo
 import { DemoComponent } from './components/demo/demo.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CustomerStoryComponent } from './components/customer-story/customer-story.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { CareerComponent } from './components/career/career.component';
+import { HomeComponent } from './components/home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SliderComponent } from './components/slider/slider.component';
+
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent, FooterComponent, NavbarComponent, AboutUsComponent, ContactUsComponent, CareerComponent, HomeComponent, SliderComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

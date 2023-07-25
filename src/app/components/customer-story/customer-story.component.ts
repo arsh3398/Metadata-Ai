@@ -19,5 +19,5 @@ export class CustomerStoryComponent {
     'display':'flex',
     'align-items': 'center'
   }
-  tablePanels:string[]=['assets/panel-1.jpg','assets/panel-2.jpg','assets/panel-3.jpg','assets/panel-4.jpg']
+  tablePanels:string[]=['assets/blur-1.png','assets/blur-2.png','assets/blur-3.png','assets/blur-4.png']
 }

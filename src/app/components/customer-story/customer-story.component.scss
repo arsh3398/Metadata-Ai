@@ -6,16 +6,14 @@
         display: flex;
         justify-content: center;
         gap: 20px;
-        border: 0px;
-      
+        border: 0px;  
         .nav-item {
           .nav-link {
+            margin: 0px 20px;
             border: 0px;
             cursor: pointer;
+            background-color: rgb(190, 240, 190);
             filter: grayscale(100%);
-            img {
-              width: 200px;
-            }
           }
         }
       }
@@ -27,25 +25,17 @@
         .panel {
           display: none;
           .content-container{
-            display: flex;
-            align-items: center;
             .image-container{
-              z-index: -1;
-              position: relative;
-              left: 300px;
               img{
-                width: 1000px;
-                height: 500px;
+                width: 300px;
+                height: 400px;
               }
               }
               .text-content{
                 background-color: white;
                 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
                 border-radius: 5px;
-                padding: 30px;
-                position: relative;
-                margin: 0px;
-                left: -200px;
+                padding: 50px;
                 button{
                   background-color: rgb(202, 245, 173);
                   border: 0px;
