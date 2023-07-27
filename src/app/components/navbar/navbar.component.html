@@ -9,12 +9,13 @@
                     <li><a routerLink="career">Career</a></li>
                 </ul>
         </div>
-        <button class="menu" (click)="displayChange()">Hamburger</button>
+        <a class="menu" (click)="displayChange()"><fa-icon [icon]="icon"></fa-icon></a>
+        
         
     </div>
 </div>
-<div class="mobile-nav" *ngIf="isActive">
-    <div class="mobile-content container">
+<div class="mobile-nav" >
+    <div class="mobile-content container" [ngStyle]="isActive==true? styles : null">
         <div class="pages">
             <ul>
                 <li><a routerLink="">Home</a></li>
