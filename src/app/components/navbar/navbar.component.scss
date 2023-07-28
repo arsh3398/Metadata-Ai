@@ -32,6 +32,13 @@
 .menu{
     display: none;
 }
+.mobile-content{
+    .pages{
+        ul{
+            display: none;
+        }
+    }
+}
 li::after{
     content: "";
     display: block;
@@ -77,6 +84,7 @@ li:hover::after{
                 flex-direction: column;
                 gap: 50px;
                 text-align: right;
+                margin-bottom: 0px;
                 li{
                     list-style: none;
                     margin: 10px 20px;
