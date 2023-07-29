@@ -27,10 +27,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SliderComponent } from './components/slider/slider.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PolicyComponent } from './components/policy/policy.component';
+import { TermsComponent } from './components/terms/terms.component';
+import { LicenseComponent } from './components/license/license.component';
+import { RefundsComponent } from './components/refunds/refunds.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent, FooterComponent, NavbarComponent, AboutUsComponent, ContactUsComponent, CareerComponent, HomeComponent, SliderComponent],
+  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent, FooterComponent, NavbarComponent, AboutUsComponent, ContactUsComponent, CareerComponent, HomeComponent, SliderComponent, PolicyComponent, TermsComponent, LicenseComponent, RefundsComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,ReactiveFormsModule,FontAwesomeModule,],
   providers: [
     {provide : LocationStrategy , useClass: HashLocationStrategy}
