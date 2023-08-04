@@ -1,8 +1,8 @@
 .about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 150px;
   font-family: Montserrat, sans-serif;
 
@@ -47,43 +47,41 @@
       }
     }
   }
-  .demo-section{
+  .demo-section {
     display: flex;
     justify-content: center;
-    .demo{
-        padding: 50px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        color: white;
-        border-radius: 20px;
-        background-color: #183153;
-        width: 80%;
-        button{
-            border: 0px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 50px;
-    
-        }
+    .demo {
+      padding: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color: white;
+      border-radius: 20px;
+      background-color: #183153;
+      width: 80%;
+      button {
+        border: 0px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 50px;
+      }
     }
   }
-    
-  }
+}
 
-@media  screen and (max-width:1052px) {
-    .about-us{
-        .text-content{
-            h5{
-                font-size: 25px;
-            }
-            p{
-                font-size: 15px;
-            }
-            strong{
-                h1{
-                    font-size: 35px;
-                }
-            }
+@media screen and (max-width: 1052px) {
+  .about-us {
+    .text-content {
+      h5 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 15px;
+      }
+      strong {
+        h1 {
+          font-size: 35px;
         }
+      }
     }
+  }
 }
