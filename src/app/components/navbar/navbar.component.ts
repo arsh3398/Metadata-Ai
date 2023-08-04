@@ -18,5 +18,9 @@ export class NavbarComponent {
       this.icon=faBars
     }
   }
+  closeNav(){
+    this.isActive=false;
+    this.icon=faBars
+  }
 
 }

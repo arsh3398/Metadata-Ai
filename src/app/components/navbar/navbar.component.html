@@ -1,5 +1,5 @@
 <div class="navbar">
-    <div class="content container">
+    <div class="content container-fluid">
             <div class="logo"><img src="assets/logo.png" alt=""></div>
             <div class="pages">
                 <ul>
@@ -18,10 +18,10 @@
     <div class="mobile-content container" [ngStyle]="isActive==true? styles : null">
         <div class="pages">
             <ul>
-                <li><a routerLink="">Home</a></li>
-                <li><a routerLink="about">About Us</a></li>
-                <li><a routerLink="contact">Contact Us</a></li>
-                <li><a routerLink="career">Career</a></li>
+                <li><a routerLink="" (click)="closeNav()">Home</a></li>
+                <li><a routerLink="about" (click)="closeNav()">About Us</a></li>
+                <li><a routerLink="contact" (click)="closeNav()">Contact Us</a></li>
+                <li><a routerLink="career" (click)="closeNav()">Career</a></li>
             </ul>
     </div>
 </div></div>
