@@ -4,13 +4,13 @@
   top: 0px;
   background-color: white;
   z-index: 1;
-  height: 85px;
+  height: 82px;
+  padding: 0px;
   .content {
     border-bottom: 1px black solid;
     display: flex;
     .logo {
       margin: 15px;
-
       img {
         width: 200px;
       }
@@ -55,6 +55,15 @@ li:hover::after {
 }
 @media screen and (max-width: 992px) {
   .navbar {
+    height: 73px;
+    padding: 0px;
+    .content {
+      .logo{
+        img{
+          width: 150px;
+        }
+      }
+    }
     .pages {
       display: none;
     }

@@ -17,7 +17,7 @@
   background: linear-gradient(45deg, rgb(243, 253, 156), rgb(172, 243, 144));
   border-radius: 50%;
   margin: 17px 17px;
-  padding: 13px 21px;
+  padding: 23px 31px;
   text-align: center;
   color: black;
 }
@@ -25,6 +25,8 @@
 
 .timeline-left {
   border-left: 1px black dotted;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

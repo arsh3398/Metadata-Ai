@@ -18,13 +18,17 @@
     
 }
 
-.boxes{
-    display: flex;
-    justify-content: center;
-}
-
-.boxes img{
-    margin: 5px 5px;
-    width: 150px;
-    height: 40px;
-}
+.clients {
+    width: 50%;
+    text-align: center;
+    .icons {
+      .boxes {
+        display: flex;
+        justify-content: center;
+        img {
+          margin: 5px 5px;
+          width: 80%;
+        }
+      }
+    }
+  }

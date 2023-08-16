@@ -31,10 +31,11 @@ import { PolicyComponent } from './components/policy/policy.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { LicenseComponent } from './components/license/license.component';
 import { RefundsComponent } from './components/refunds/refunds.component';
+import { MetadataElementComponent } from './components/metadata-element/metadata-element.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent, FooterComponent, NavbarComponent, AboutUsComponent, ContactUsComponent, CareerComponent, HomeComponent, SliderComponent, PolicyComponent, TermsComponent, LicenseComponent, RefundsComponent],
+  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent, FooterComponent, NavbarComponent, AboutUsComponent, ContactUsComponent, CareerComponent, HomeComponent, SliderComponent, PolicyComponent, TermsComponent, LicenseComponent, RefundsComponent, MetadataElementComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,ReactiveFormsModule,FontAwesomeModule,],
   providers: [
     {provide : LocationStrategy , useClass: HashLocationStrategy}
