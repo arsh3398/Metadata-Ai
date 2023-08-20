@@ -1,0 +1,50 @@
+.customer-story{
+    margin: 100px;
+    padding: 50px;
+    .nav-tabs {
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border: 0px;  
+        .nav-item {
+          .nav-link {
+            margin: 0px 20px;
+            border: 0px;
+            cursor: pointer;
+            background-color: rgb(190, 240, 190);
+            filter: grayscale(100%);
+          }
+        }
+      }
+      
+      .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .panel {
+          display: none;
+          .content-container{
+            .image-container{
+              img{
+                width: 300px;
+                height: 400px;
+              }
+              }
+              .text-content{
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                border-radius: 5px;
+                padding: 50px;
+                button{
+                  background-color: rgb(202, 245, 173);
+                  border: 0px;
+                  border-radius: 20px;
+                  padding: 10px 20px;
+                }
+              }
+          }
+        }
+      }
+      
+}

@@ -1,19 +1,19 @@
-<div class="timeline-section" *ngFor="let i of [1, 2, 3, 4, 5]">
-  <div class="timeline-element">
+<div class="timeline-section" *ngFor="let cloudItnstance of cloudSection; let indexElement = index;">
+  <div class="timeline-element container">
     <div class="counter-section">
       <div class="pseudo-icon">
-        <strong>{{ i }}</strong>
+        <strong>{{ indexElement+1 }}</strong>
       </div>
     </div>
-    <div class="timeline-content">
-      <div class="timeline-right">
+    <div class="timeline-content row">
+      <div class="timeline-right col-6">
         <div class="content-element">
-          <img src="assets/chat-bot.gif" alt="" />
+          <img src="{{cloudItnstance.cloudImg}}" alt="" />
         </div>
       </div>
-      <div class="timeline-left">
+      <div class="timeline-left col-6">
         <div class="content-element-text">
-          <h1><strong>Lorem, ipsum dolor.</strong></h1>
+          <h1><strong>{{cloudItnstance.cloudDesc}}</strong></h1>
           <h1>Lorem ipsum dolor sit.</h1>
         </div>
       </div>

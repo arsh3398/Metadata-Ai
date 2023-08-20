@@ -1,3 +1,7 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
 .timeline-element {
   display: flex;
   flex-direction: column;
@@ -13,17 +17,19 @@
   background: linear-gradient(45deg, rgb(243, 253, 156), rgb(172, 243, 144));
   border-radius: 50%;
   margin: 17px 17px;
-  padding: 13px 21px;
+  padding: 23px 31px;
   text-align: center;
   color: black;
 }
 
-.timeline-content {
-  display: flex;
-}
 
 .timeline-left {
   border-left: 1px black dotted;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline-section:nth-child(even) {
@@ -39,18 +45,16 @@
   }
 }
 
-.content-element img {
-  width: 450px;
-  height: 300px;
-  margin: 50px 25px;
+.content-element{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.content-element-text {
-  width: 450px;
-  height: 300px;
-  margin: 50px 25px;
-  padding: 90px 0px;
+.content-element img {
+  width: 90%;
 }
+
 
 .timeline-section:nth-child(5) {
   .timeline-content{
@@ -60,6 +64,7 @@
 }
 
 .FinalStep{
+  text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -68,6 +73,15 @@
 .FinalStep h1{
   text-align: center;
   background-color: rgb(255, 255, 144);
-  width: 10%;
+  width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+  .content-element-text{
+    h1{
+      font-size: medium;
+    }
+  }
+  
 }
 

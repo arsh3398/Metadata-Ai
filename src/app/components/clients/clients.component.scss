@@ -1,4 +1,5 @@
 .client-section{
+    width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -17,13 +18,17 @@
     
 }
 
-.clients{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.boxes img{
-    margin: 5px 5px;
-    width: 150px;
-    height: 40px;
-}
+.clients {
+    width: 50%;
+    text-align: center;
+    .icons {
+      .boxes {
+        display: flex;
+        justify-content: center;
+        img {
+          margin: 5px 5px;
+          width: 80%;
+        }
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+.demo-section {
+    font-family: "Montserrat", sans-serif;
+    h1{
+        text-align: center;
+    }
+    .lower-content {
+        padding: auto;
+
+        .left-information {
+            padding: 50px 100px;
+
+            span {
+                margin-right: 50px;
+                font-weight: 600;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    .right-video{
+        iframe{
+            width: 100%;
+            height: 315px;
+        }
+    }
+}
+
+@media screen and (max-width:1390px) {
+
+}

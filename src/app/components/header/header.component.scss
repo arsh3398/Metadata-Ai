@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    z-index: 1;
 }
 
 .navbar-4 {
@@ -143,6 +144,10 @@
 }
 
 @media screen and (max-width: 800px) {
+    .navbar-4{
+        position: absolute;
+        top: 0;
+    }
     .menu-button {
         display: block;
         margin: 10px;
@@ -170,6 +175,11 @@
 }
 
 @media screen and (max-width: 420px) {
+
+    .navbar-4{
+        position: absolute;
+        top: 0;
+    }
     .Demo-button {
         font-size: small;
     }

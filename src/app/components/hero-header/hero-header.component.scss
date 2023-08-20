@@ -1,92 +1,98 @@
-
-.section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-header {
-  display: flex;
   margin-bottom: 20px;
   margin-top: 100px;
-  padding: 0px 100px;
 }
 
-.hero-left {
-  padding: 30px;
-  color: black;
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
   width: 100%;
+  margin: 20px 0px;
 }
 
-
-.text-bold {
-    font-family: "Be Vietnam Pro";
-    font-weight: 500;
-    font-size: 3rem;
-    line-height: 1.1;
+.Demo-button {
+  margin: 15px 0px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #8dee67;
+  font-size: 80%;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 15px;
+  text-decoration: none;
 }
 
-.display-7 {
-    font-size: 1.2rem;
-    line-height: 1.1;
-    margin-bottom: 30px;
+.player {
+  padding: 0px 10px;
+
+  .content {
+    .deco-up {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 80%;
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+
+    .hero-gif-bottom {
+      display: flex;
+      justify-content: center;
+
+      img {
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 80%;
+      }
+    }
+  }
 }
 
-.hero-right {
-  padding: 45px;
-  width: 100%;
-}
+@media screen and (max-width: 990px) {
+  .hero-header {
+    margin-top: 125px;
+  }
 
-.image-container img{
-    width: 450px;
-    height: 400px;
-}
-
-.Demo-button{
-    margin: 15px 0px;
+  .left-content {
     text-align: center;
-    border-radius: 50px;
-    background-color: #8dee67;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 50px;
-    padding: 10px 15px;
-    text-decoration: none;
+
+    h1 {
+      font-size: 20px;
+      font-weight:600;
+    }
+  }
 }
 
-.player{
-    margin: 5px 0px;
-    border-style: solid;
-    border-radius: 12px;
-    border-width: 1px;
-}
+@media screen and (max-width: 820px) {
+  .left-content {
+    text-align: center;
 
-.player img{
-    height: 500px;
-    width: 918px;
-}
-.hero-gif-bottom{
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-.deco-up{
-    height: 18px;
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom: 1px solid;
-    margin: 0px;
-    padding: 2px;
-}
-.mac-button{
-    display: flex;
-}
-.mac-button img{
-    width: 34px;
-    height: 9.94px;
-    position: relative;
-    left: 4px;
-    top: 2px;
+    h1 {
+      font-size: 20px;
+      font-weight:600;
+    }
+
+    p {
+      font-size: small;
+    }
+
+    .Demo-button {
+      padding: 7px 7px;
+      font-size: smaller;
+    }
+  }
 }
