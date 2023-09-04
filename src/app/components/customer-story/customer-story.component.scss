@@ -5,12 +5,15 @@
         margin: 50px;
         display: flex;
         justify-content: center;
-        gap: 20px;
         border: 0px;  
         .nav-item {
+          margin-left: 0px;
+          margin-right: 0px;
           .nav-link {
-            margin: 0px 20px;
+            padding: 20px 50px;
             border: 0px;
+            font-size: larger;
+            border-radius: 0;
             cursor: pointer;
             background-color: rgb(190, 240, 190);
             filter: grayscale(100%);
@@ -25,7 +28,13 @@
         .panel {
           display: none;
           .content-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
             .image-container{
+              display: flex;
+              justify-content: center;
               img{
                 width: 300px;
                 height: 400px;
@@ -36,12 +45,8 @@
                 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
                 border-radius: 5px;
                 padding: 50px;
-                button{
-                  background-color: rgb(202, 245, 173);
-                  border: 0px;
-                  border-radius: 20px;
-                  padding: 10px 20px;
-                }
+                height: 300px;
+                width: 537px;
               }
           }
         }

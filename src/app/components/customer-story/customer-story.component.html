@@ -1,25 +1,21 @@
 <div class="customer-story">
   <ul class="nav nav-tabs">
-    <li class="nav-item" *ngFor="let tab of [1, 2, 3, 4]; let i = index" (click)="makeActive(i)">
+    <li class="nav-item" *ngFor="let tab of TabName; let i = index" (click)="makeActive(i)">
       <a class="nav-link" [ngClass]="activeTab == i ? 'active' : ''" aria-current="page"
-        [ngStyle]="activeTab == i ? stylesTab : null">Overview</a>
+        [ngStyle]="activeTab == i ? stylesTab : null">{{tab}}</a>
     </li>
   </ul>
   <div class="banner" *ngFor="let tablePanel of tablePanels; let j = index">
-    <div class="panel container" [ngStyle]="activeTab == j ? stylesPanel : null">
-      <div class="content-container row">
-        <div class="image-container col-6">
-          <img src="{{ tablePanel }}" alt="" />
+    <div class="panel" [ngStyle]="activeTab == j ? stylesPanel : null">
+      <div class="content-container">
+        <div class="image-container">
+          <img src="{{ tablePanel.img }}" alt="" />
         </div>
-        <div class="text-content col-6">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+        <div class="text-content">
+          <h2>{{ tablePanel.headLine }}</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-            error laudantium ea vero sint ad animi, suscipit, eveniet
-            repellendus placeat eligendi tempora iste in porro hic sit veniam
-            tempore laborum eaque praesentium iure a quis amet! Dolorum dicta
+            {{ tablePanel.contentPara }}
           </p>
-          <button>More info..</button>
         </div>
       </div>
     </div>

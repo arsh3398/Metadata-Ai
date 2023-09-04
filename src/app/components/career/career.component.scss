@@ -87,11 +87,12 @@
     font-weight: 500;
   }
   .jobs {
+    display: flex;
+    justify-content: center;
     margin: 5px 0px;
     padding: 0px 0px;
     .job-description {
-      background-color: rgb(220, 252, 205);
-      border: 4px solid white;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
       padding: 0px;
       text-align: center;
       h6 {

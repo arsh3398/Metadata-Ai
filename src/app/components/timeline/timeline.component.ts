@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class TimelineComponent {
   cloudSection=[
-    {'cloudImg':'assets/aws.png','cloudDesc':'Fortify Your Future with AWS Security: Unleash Trust in the Cloud'},
-    {'cloudImg':'assets/azure.png','cloudDesc':'Elevate Confidence in the Cloud: Empowering Security with Azure'},
-    {'cloudImg':'assets/gc.png','cloudDesc':'Guardian of Cloud Confidence: Securing Excellence with GCP'},
+    {'cloudImg':'assets/aws.png','cloudDesc':'Fortify Your Future with AWS Security: Unleash Trust in the Cloud','cloudtag':'Strengthen AWS Cloud Trust'},
+    {'cloudImg':'assets/azure.png','cloudDesc':'Elevate Confidence in the Cloud: Empowering Security with Azure','cloudtag':'Boosting Azure Security Confidence'},
+    {'cloudImg':'assets/gc.png','cloudDesc':'Guardian of Cloud Confidence: Securing Excellence with GCP','cloudtag':'Cloud Confidence: GCP Security'},
   ]
 }

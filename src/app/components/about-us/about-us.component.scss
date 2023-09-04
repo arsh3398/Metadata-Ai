@@ -11,7 +11,7 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    width: 40%;
+    text-align: left;
 
     strong {
       h1 {
@@ -21,16 +21,13 @@
   }
 
   .team-image {
-    margin-top: 100px;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
     align-items: center;
 
     img {
-      width: 50%;
+      width: 80%;
     }
   }
   .clients {
@@ -70,8 +67,12 @@
 
 @media screen and (max-width: 1052px) {
   .about-us {
-    .text-content {
+    .row{
+      display: flex;
+      justify-content: center;
+      .text-content {
         width: 70%;
+        text-align: center;
       h5 {
         font-size: 20px;
       }
@@ -83,6 +84,7 @@
           font-size: 30px;
         }
       }
+    }
     }
   }
 }
