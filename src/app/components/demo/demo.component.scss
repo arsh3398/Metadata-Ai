@@ -20,9 +20,11 @@
         }
     }
     .right-video{
-        border: 2px thick black solid;
+        border: 2px black solid;
+        width: fit-content;
+        padding: 0px;
         vg-player{
-            width: 889px;
+            width: 850px;
             height: 500px;
             z-index: 0;
         }

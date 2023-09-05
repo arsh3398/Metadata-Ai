@@ -36,6 +36,7 @@ import { VgCoreModule } from '@videogular/ngx-videogular/core';
 import { VgControlsModule } from '@videogular/ngx-videogular/controls';
 import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
 import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 
 
 @NgModule({
@@ -43,7 +44,7 @@ import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, ReactiveFormsModule, FontAwesomeModule, VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule,],
+    VgBufferingModule, RecaptchaModule,RecaptchaFormsModule],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],

@@ -9,6 +9,7 @@ export class NavbarComponent {
   icon=faBars;
   isActive=false;
   styles={'height':'100vh', 'display':'block'}
+  
   displayChange(){
     if (this.isActive==false && this.icon==faBars) {
       this.isActive=true
