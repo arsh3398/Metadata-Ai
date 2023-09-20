@@ -6,8 +6,8 @@
   z-index: 1;
   height: 82px;
   padding: 0px;
+  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
   .content {
-    border-bottom: 1px black solid;
     display: flex;
     .logo {
       margin: 15px;

@@ -8,6 +8,8 @@
         display: flex;
         align-items: center;
         .left-information {
+            text-align: center;
+            margin: 20px 0px;
             span {
                 margin-right: 50px;
                 font-weight: 600;
@@ -24,8 +26,8 @@
         width: fit-content;
         padding: 0px;
         vg-player{
-            width: 850px;
-            height: 500px;
+            // width: 850px;
+            // height: 500px;
             z-index: 0;
         }
     }

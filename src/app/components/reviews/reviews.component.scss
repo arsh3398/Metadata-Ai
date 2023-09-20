@@ -1,9 +1,10 @@
-
-.carousel{
+.carousel-element {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  .carousel {
     width: 1000px;
-    height: 700px;
-}
-
-.carousel h1{
-    text-align: center;
+    height: 667px;
+    border: 2px solid black;
+  }
 }
