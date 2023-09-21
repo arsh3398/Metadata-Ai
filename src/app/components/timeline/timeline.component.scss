@@ -31,20 +31,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.timeline-section:nth-child(even) {
-  .timeline-right {
-    border-left: 1px black dotted;
-    order: 2;
-  }
-
-  .timeline-left {
-    text-align: right;
-    border: 0px;
-    order: 1;
-  }
-}
-
 .lazy-load-image{
   transform: translateX(100px);
   opacity: 0;
@@ -54,6 +40,27 @@
   transform: translateX(0px);
   opacity: 1;
 }
+.timeline-section:nth-child(even) {
+  .timeline-right {
+    border-left: 1px black dotted;
+    order: 2;
+    .content-element{
+      .lazy-load-image{
+      transform: translateX(-100px);
+    }
+    .loaded{
+      transform: translateX(0px);
+      opacity: 1;
+    }}
+  }
+
+  .timeline-left {
+    text-align: right;
+    border: 0px;
+    order: 1;
+  }
+}
+
 
 .content-element{
   display: flex;
