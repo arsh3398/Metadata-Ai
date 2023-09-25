@@ -1,7 +1,7 @@
 .client-section{
     width: 100%;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .description{
@@ -28,6 +28,19 @@
         img {
           margin: 5px 5px;
           width: 80%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:575px) {
+    .clients {
+      .icons {
+        .boxes {
+          img {
+            margin: 20px 5px;
+            width: 80%;
+          }
         }
       }
     }

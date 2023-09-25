@@ -8,18 +8,21 @@
     align-items: center;
     margin-top: 150px;
     margin-bottom: 100px;
-    .Demo-button {
-      margin: 15px 0px;
-      text-align: center;
-      border-radius: 50px;
-      background-color: #8dee67;
-      font-size: 80%;
-      color: #000000;
-      font-weight: 500;
-      cursor: pointer;
-      border-radius: 50px;
-      padding: 10px 15px;
-      text-decoration: none;
+    .text-content{
+      max-width: 40%;
+      .Demo-button {
+        margin: 15px 0px;
+        text-align: center;
+        border-radius: 50px;
+        background-color: #8dee67;
+        font-size: 80%;
+        color: #000000;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 50px;
+        padding: 10px 15px;
+        text-decoration: none;
+      }
     }
   }
   .background{  
@@ -110,3 +113,24 @@
 //     }
 //   }
 // }
+@media screen and (max-width:650px){
+  .quote{
+    .text{
+      .text-content{
+        max-width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width:768px){
+  .player{
+    .content{
+      .hero-gif-bottom{
+        img{
+          max-width: 110%;
+        }
+      }
+    }
+  }
+  
+}
