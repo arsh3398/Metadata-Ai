@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { faX } from '@fortawesome/free-solid-svg-icons';
@@ -18,7 +19,7 @@ export class CareerComponent {
       this.isActive=false
     }
   }
-  constructor(private builder: FormBuilder){}
+  constructor(private builder: FormBuilder, private http:HttpClient){}
   public captchaResolved : boolean = false;
   CareerForm=this.builder.group({
     firstName:this.builder.control('', Validators.required),
@@ -28,11 +29,18 @@ export class CareerComponent {
   })
   onSubmit(){
     if (this.CareerForm.valid) {
-      console.log('Form submitted!');
-      console.log(this.CareerForm.value);
+      let bodyData={
+        firstName : this.CareerForm.value.firstName,
+        lastName : this.CareerForm.value.lastName,
+        email : this.CareerForm.value.email,
+      };
+      this.http.post('http://127.0.0.1:3000/add/jobrequest',bodyData,{responseType:'text'}).subscribe((resultData:any)=>{
+        alert('Form submitted!');
+
+      })
     }
     else{
-      console.log('Invalid')
+      alert('Form Invalid')
     }
   }
   checkCaptcha(captchaResponse : string) {

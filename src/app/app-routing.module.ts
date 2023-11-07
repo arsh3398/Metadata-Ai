@@ -8,6 +8,9 @@ import { PolicyComponent } from './components/policy/policy.component';
 import { LicenseComponent } from './components/license/license.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { RefundsComponent } from './components/refunds/refunds.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { CustomerqueriesComponent } from './components/customerqueries/customerqueries.component';
+import { JobApplicationsComponent } from './components/job-applications/job-applications.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -18,6 +21,9 @@ const routes: Routes = [
   {path:'license',component:LicenseComponent},
   {path:'terms',component:TermsComponent},
   {path:'refunds',component:RefundsComponent},
+  {path:'admin',component:AdminComponent},
+  {path:'Customerqueries',component:CustomerqueriesComponent},
+  {path:'jobapplications',component:JobApplicationsComponent},
 ];
 
 @NgModule({

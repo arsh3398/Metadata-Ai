@@ -37,14 +37,18 @@ import { VgControlsModule } from '@videogular/ngx-videogular/controls';
 import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
 import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
 import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
+import {HttpClientModule } from '@angular/common/http';
+import { AdminComponent } from './components/admin/admin.component';
+import { CustomerqueriesComponent } from './components/customerqueries/customerqueries.component';
+import { JobApplicationsComponent } from './components/job-applications/job-applications.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent, FooterComponent, NavbarComponent, AboutUsComponent, ContactUsComponent, CareerComponent, HomeComponent, SliderComponent, PolicyComponent, TermsComponent, LicenseComponent, RefundsComponent, MetadataElementComponent],
+  declarations: [AppComponent, HeaderComponent, HeroHeaderComponent, ClientsComponent, TimelineComponent, FeaturesComponent, ReviewsComponent, InformationSectionComponent, SlineInDirective, SocialpostsComponent, WorldmapComponent, IntegrationComponent, DemoComponent, BannerComponent, CustomerStoryComponent, FooterComponent, NavbarComponent, AboutUsComponent, ContactUsComponent, CareerComponent, HomeComponent, SliderComponent, PolicyComponent, TermsComponent, LicenseComponent, RefundsComponent, MetadataElementComponent, AdminComponent, SliderComponent, CustomerqueriesComponent, JobApplicationsComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, ReactiveFormsModule, FontAwesomeModule, VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule, RecaptchaModule,RecaptchaFormsModule],
+    VgBufferingModule, RecaptchaModule,RecaptchaFormsModule,HttpClientModule],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
